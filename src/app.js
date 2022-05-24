@@ -5,25 +5,17 @@ import ColorThief from "colorthief";
 
 console.log("Welcome to NPM!");
 
-
 const confettiButton = document.getElementById("confetti-button");
 const image = document.getElementById("image");
 const colorThief = new ColorThief();
 const body = document.querySelector("body");
 const imgURL = document.querySelector("#img-url");
 
-
-
-
-
 image.addEventListener('load', () => {
     const color = colorThief.getColor(image);
     body.style.backgroundColor = `rgb(${color[0]},${color[1]},${color[2]})`
     fireConfetti();
 });
-
-
-
 
 const fireConfetti = (event) => {
     const rgbPalette = colorThief.getPalette(image, 8);
@@ -43,8 +35,6 @@ const fireConfetti = (event) => {
         colors: [hexPalette[0], hexPalette[1], hexPalette[2],hexPalette[3],hexPalette[4],hexPalette[5],hexPalette[6],hexPalette[7]]
     });
 }
-
-
 
 const onUserURL = (event) => {
     console.log("onUserURL")

@@ -2,8 +2,8 @@
   "name": "packages-codealong",
   "version": "1.0.0",
   "description": "Codealong for NPM lesson",
-  "homepage": "",
-  "author": "",
+  "homepage": "https://rachel2bester.github.io/npm-codealong",
+  "author": "Rachel Bester",
   "private": true,
   "scripts": {
     "build": "webpack --config ./webpack.config.js",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "live-server": "^1.2.1",
     "sass": "^1.51.0",
