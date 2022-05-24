@@ -1,0 +1,29 @@
+{
+  "name": "packages-codealong",
+  "version": "1.0.0",
+  "description": "Codealong for NPM lesson",
+  "homepage": "",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "build:dev": "webpack --config ./webpack.config.dev.js",
+    "start": "live-server build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "live-server": "^1.2.1",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
